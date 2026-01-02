@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B0B0F;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #111;
+  color: white;
+  position: fixed;
+  border-radius: 0px 0px 10px 10px;
+  height: 70px;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+main{
+  padding-top: 70px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  gap: 20px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 8px 4px;
+  position: relative;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0%;
+  height: 2px;
+  background-color: #7C5CFF;
+
+  transition: width 0.3s ease;
+}
+button:hover::after{
+    width: 100%;
+}
+
+h1{
+  font-size: 1rem;
+}
+
+.inicio{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.colum{
+  flex: 1;
+  min-width: 250px;
+}
+
+.colum ul{
+    list-style: none;
+  padding: 0;
+}
+
+.colum ul li {
+  margin-bottom: 8px;
+}
+
+.colum ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.colum ul li a:hover {
+  text-decoration: color(srgb red);
+  text-decoration: underline;
+}
+
+.titulo{
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.inicio .foto{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.socialLinks {
+  display: flex;
+  margin-left: 50px;
+  gap: 15px;       
+}
+
+.socialLinks .social-icon i {
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.socialLinks .social-icon:hover i {
+  color: white;
+}
+
+.skills_Text {
+  display: flex;
+  justify-content: center;
+
+  opacity: 0;
+  transition: 
+    opacity 0.4s, 
+    transform 0.4s;
+}
+
+.skills_Text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: #0B0B0F;
+
+  transition: 
+    transform 0.45s ease,
+    background 0.45s ease;
+}
+
+.tech:hover {
+  transform: translateY(-6px) scale(1);
+  background: #0B0B0F;
+}
+
+.tech i {
+  font-size: 2.2rem;
+}
+
+.tech span {
+  font-size: 0.9rem;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab.active {
+  border-bottom: 2px solid #4f46e5; /* azul */
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.Botoes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}

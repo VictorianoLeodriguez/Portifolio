@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/Css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <button class="navHead-btn" data-target="sobreMim">Sobre Mim</button>
+        </li>
+        <li>
+          <button class="navHead-btn" data-target="skills">Skills</button>
+        </li>
+        <li>
+          <button class="navHead-btn" data-target="projetos">Projetos</button>
+        </li>
+        <li>
+          <button class="navHead-btn" data-target="exp">Experiência</button>
+        </li>
+        <li>
+          <button class="navHead-btn" data-target="educacao">Educação</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="sobreMim">
+      <section class="inicio">
+        <img src="/Assets/Me.jpg" alt="Foto de Enzo Victoriano Leodriguez" class="foto">
+        <div class="colum">
+          <h1 class="titulo">Seja Bem Vindo ao Meu Portifólio
+            <br>
+            Enzo Victoriano Leodriguez
+          </h1>
+          <ul>
+            <li>Full-Stack Developer</li>
+            <li>Araras - São Paulo - BR</li>
+            <li>(11) 97804-1122</li>
+            <li><a href="mailto:evictorianoleo@gmail.com">evictorianoleo@gmail.com</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="socialLinks">
+        <a href="https://github.com/VictorianoLeodriguez" target="_blank" class="social-icon">
+          <i class="devicon-github-original"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/enzovictorianoleodriguez" target="_blank" class="social-icon">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
+      </section>
+    </article>
+
+    <article id="skills">
+      <section>
+        <div class="skills_Text">
+          <h1>Skills</h1>
+        </div>
+
+        <div class="tech_grid">
+          <div class="tech">
+            <i class="devicon-html5-plain"></i>
+            <span>HTML</span>
+          </div>
+
+          <div class="tech">
+            <i class="devicon-css3-plain"></i>
+            <span>CSS</span>
+          </div>
+
+          <div class="tech">
+            <i class="devicon-javascript-plain"></i>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech">
+            <i class="devicon-dot-net-plain"></i>
+            <span>.NET</span>
+          </div>
+
+          <div class="tech">
+            <i class="devicon-mysql-plain"></i>
+            <span>MySql</span>
+          </div>
+
+          <div class="tech">
+            <i class="devicon-csharp-plain"></i>
+            <span>C Sharp</span>
+          </div>
+
+             <div class="tech">
+            <i class="devicon-bootstrap-plain"></i>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article>
+      <nav class="tabs" aria-label="Projeto">
+        <div class="Botoes">
+          <button class="tab active" data-tabs="emdesenvolvimento">
+            Em desenvolvimento
+          </button>
+          <button class="tab" data-tabs="aprendizado">
+            Aprendizado
+          </button>
+          <button class="tab" data-tabs="Completos">
+            Projetos Completos
+          </button>
+        </div>
+      </nav>
+
+      <section id="emdesenvolvimento" class="tab-content active">
+        <h2>Projetos em desenvolvimento</h2>
+        <p>Projetos que estou desenvolvendo atualmente.</p>
+      </section>
+
+      <section id="aprendizado" class="tab-content">
+        <h2>Projetos básicos</h2>
+        <p>Projetos para aprendizado e fundamentos.</p>
+      </section>
+
+      <section id="completos" class="tab-content">
+        <h2>Projetos maiores</h2>
+        <p>Projetos completos e mais complexos.</p>
+      </section>
+    </article>
+
+    <section class="exp"></section>
+  </main>
+
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="JavaScript.js"></script>
+</body>
+
+</html>
