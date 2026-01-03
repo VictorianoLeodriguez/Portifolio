@@ -10,7 +10,6 @@ $(document).ready(function () {
   $('.skills_Text').addClass('show');
 });
 
-$(function() {
   $(".tab").click(function() {
     var target = $(this).data("tabs").toLowerCase();
 
@@ -22,4 +21,3 @@ $(function() {
 
     $("#" + target).addClass("active");
   });
-});
