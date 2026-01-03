@@ -10,14 +10,14 @@ $(document).ready(function () {
   $('.skills_Text').addClass('show');
 });
 
-  $(".tab").click(function() {
-    var target = $(this).data("tabs").toLowerCase();
+$(".tabs-container .tab").click(function () {
+  const container = $(this).closest(".tabs-container");
+  const target = $(this).data("tab");
 
-    $(".tab").removeClass("active");
+  container.find(".tab").removeClass("active");
+  $(this).addClass("active");
 
-    $(this).addClass("active");
+  container.find(".tab-content").removeClass("active");
+  container.find("#" + target).addClass("active");
+});
 
-    $(".tab-content").removeClass("active");
-
-    $("#" + target).addClass("active");
-  });

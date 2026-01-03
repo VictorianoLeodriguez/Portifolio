@@ -17,7 +17,9 @@
     <nav>
       <ul>
         <li>
-          <button class="navHead-btn" data-target="sobreMim">Sobre Mim</button>
+          <button class="navHead-btn" data-target="sobreMim">
+            Sobre Mim
+          </button>
         </li>
         <li>
           <button class="navHead-btn" data-target="skills">Skills</button>
@@ -38,17 +40,20 @@
   <main>
     <article id="sobreMim">
       <section class="inicio">
-        <img src="/Assets/Me.jpg" alt="Foto de Enzo Victoriano Leodriguez" class="foto">
+        <img src="/Assets/Me.jpg" alt="Foto de Enzo Victoriano Leodriguez" class="foto" />
         <div class="colum">
-          <h1 class="titulo">Seja Bem Vindo ao Meu Portifólio
-            <br>
+          <h1 class="titulo">
+            Seja Bem Vindo ao Meu Portifólio
+            <br />
             Enzo Victoriano Leodriguez
           </h1>
           <ul>
             <li>Full-Stack Developer</li>
             <li>Araras - São Paulo - BR</li>
             <li>(11) 97804-1122</li>
-            <li><a href="mailto:evictorianoleo@gmail.com">evictorianoleo@gmail.com</a></li>
+            <li>
+              <a href="mailto:evictorianoleo@gmail.com">evictorianoleo@gmail.com</a>
+            </li>
           </ul>
         </div>
       </section>
@@ -99,7 +104,7 @@
             <span>C Sharp</span>
           </div>
 
-             <div class="tech">
+          <div class="tech">
             <i class="devicon-bootstrap-plain"></i>
             <span>Bootstrap</span>
           </div>
@@ -107,38 +112,106 @@
       </section>
     </article>
 
-    <article>
+    <article id="projetos" class="tabs-container">
       <nav class="tabs" aria-label="Projeto">
         <div class="Botoes">
-          <button class="tab active" data-tabs="emdesenvolvimento">
-            Em desenvolvimento
-          </button>
-          <button class="tab" data-tabs="aprendizado">
-            Aprendizado
-          </button>
-          <button class="tab" data-tabs="Completos">
-            Projetos Completos
-          </button>
+          <button class="tab active" data-tab="proj-dev">Em desenvolvimento</button>
+          <button class="tab" data-tab="proj-aprend">Aprendizado</button>
+          <button class="tab" data-tab="proj-comp">Projetos Completos</button>
         </div>
       </nav>
 
-      <section id="emdesenvolvimento" class="tab-content active">
-        <h2>Projetos em desenvolvimento</h2>
-        <p>Projetos que estou desenvolvendo atualmente.</p>
-      </section>
-
-      <section id="aprendizado" class="tab-content">
-        <h2>Projetos básicos</h2>
-        <p>Projetos para aprendizado e fundamentos.</p>
-      </section>
-
-      <section id="completos" class="tab-content">
-        <h2>Projetos maiores</h2>
-        <p>Projetos completos e mais complexos.</p>
-      </section>
+      <section id="proj-dev" class="tab-content active">...</section>
+      <section id="proj-aprend" class="tab-content">...</section>
+      <section id="proj-comp" class="tab-content">...</section>
     </article>
 
-    <section class="exp"></section>
+    <section id="exp" class="expe"></section>
+
+    <article id="educacao" class="tabs-container educacao">
+      <nav class="tabs" aria-label="educacao">
+        <div class="Botoes">
+          <button class="tab active" data-tab="formacao">Faculdade</button>
+          <button class="tab" data-tab="certificados">Certificados</button>
+        </div>
+      </nav>
+
+      <section id="formacao" class="tab-content active">
+          <h2>Formação Acadêmica</h2>
+
+          <div class="formacao-card">
+            <h3>Engenharia da Computação</h3>
+            <p class="instituicao">
+              <a href="https://www.fho.edu.br" target="_blank" rel="noopener noreferrer">
+                Fundação Hermínio Ometto - UNIARARAS
+              </a>
+            </p>
+            <span class="periodo">2023 - Cursando</span>
+
+            <p class="descricao">
+              Graduação com foco em desenvolvimento de software, lógica de programação,
+              estruturas de dados, banco de dados e engenharia de sistemas.
+            </p>
+          </div>
+        </section>
+
+      </section>
+
+      <section id="certificados" class="tab-content">
+        <h2 class="certificadoTittle">Certificados</h2>
+
+        <div class="certificados-grid">
+
+          <div class="certificado">
+            <h3>Suporte e segurança de rede</h3>
+            <p>Plataforma: Cisco</p>
+            <span>2024</span>
+            <a href="/Assets/Certificados/_certificate_victoriano-alunos-fho-edu-br_6e2f2daf-1ae6-42c1-a2e5-de55973cbd0c.pdf"
+              target="_blank">
+              Ver certificado
+            </a>
+          </div>
+
+          <div class="certificado">
+            <h3>Introdução à IoT e à Transformação Digital</h3>
+            <p>Plataforma: Cisco</p>
+            <span>2024</span>
+            <a href="/Assets/Certificados/_certificate_victoriano-alunos-fho-edu-br_de2917a5-87fa-40b0-b9ab-1977a52a59af.pdf"
+              target="_blank">
+              Ver certificado
+            </a>
+          </div>
+
+          <div class="certificado">
+            <h3>Front-End Com Asp.NET MVC</h3>
+            <p>Plataforma: DIO</p>
+            <span>2025</span>
+            <a href="/Assets/Certificados/JCWQLVFA.pdf" target="_blank">
+              Ver certificado
+            </a>
+          </div>
+
+          <div class="certificado">
+            <h3>Formação HTML Web Developer</h3>
+            <p>Plataforma: DIO</p>
+            <span>2025</span>
+            <a href="/Assets/Certificados/MAOMVCH2.pdf" target="_blank">
+              Ver certificado
+            </a>
+          </div>
+
+          <div class="certificado">
+            <h3>Banco de Dados SQL e NOSQL <br> Para Dessenvolvedores Back-end</h3>
+            <p>Plataforma: DIO</p>
+            <span>2025</span>
+            <a href="/Assets/Certificados/NYYB6TZC.pdf" target="_blank">
+              Ver certificado
+            </a>
+          </div>
+
+        </div>
+      </section>
+    </article>
   </main>
 
   <footer></footer>
